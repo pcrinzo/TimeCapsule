@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cápsula do Tempo</title>
+  <link rel="stylesheet" href="timecapsule.css">
+</head>
+<body>
+  <div class="capsula">
+    <h1>🌌 Cápsula do Tempo</h1>
+    <p>Escreva sua mensagem para o futuro!</p>
+
+    <p>Nossa capsula será aberta em:</p>
+
+    <!-- Contador -->
+    <div id="contador"></div>
+
+    <form action="https://formsubmit.co/pcrinzo20@hotmail.com" method="POST">
+
+    <input type="hidden" name="_next" value="http://127.0.0.1:5500/timecapsule.html">
+
+
+    <input type="hidden" name="_captcha" value="false">
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <label for="mensagem">Mensagem para a cápsula do tempo:</label><br>
+    <textarea id="mensagem" name="mensagem" rows="8" required></textarea><br><br>
+
+    <button type="submit">Enviar</button>
+</form>
+
+  </div>
+
+  <script src="timecapsule.js"></script>
+</body>
+</html>
