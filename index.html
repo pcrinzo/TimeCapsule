@@ -12,24 +12,20 @@
 
     <p>Nossa capsula será aberta em:</p>
 
-    <!-- Contador -->
     <div id="contador"></div>
 
-    <form action="https://formsubmit.co/pcrinzo20@hotmail.com" method="POST">
+      <form action="https://formsubmit.co/pcrinzo20@hotmail.com" method="POST">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <textarea name="mensagem" rows="6" placeholder="Escreva sua mensagem..." required></textarea>
 
-    <input type="hidden" name="_next" value="http://127.0.0.1:5500/timecapsule.html">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="Nova mensagem para a cápsula do tempo!">
+        <input type="hidden" name="_next" value="https://pcrinzo.github.io/TimeCapsule/"> 
 
+        <button type="submit">Enviar 🚀</button>
+      </form>
 
-    <input type="hidden" name="_captcha" value="false">
-
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome" required><br><br>
-
-    <label for="mensagem">Mensagem para a cápsula do tempo:</label><br>
-    <textarea id="mensagem" name="mensagem" rows="8" required></textarea><br><br>
-
-    <button type="submit">Enviar</button>
-</form>
 
   </div>
 
